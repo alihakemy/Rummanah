@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/activity_header2" />
+
+        <TextView
+            android:id="@+id/noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/NoData"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Header"
+            android:dividerHeight="10dp"
+            android:divider="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"></ListView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/activity_header2" />
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Header"
+            tools:context=".MapsActivity" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:alpha=".8"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/GotoLocation"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Skipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:alpha=".8"
+            android:background="@drawable/btn_red_radius3"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/Skip2"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</FrameLayout>

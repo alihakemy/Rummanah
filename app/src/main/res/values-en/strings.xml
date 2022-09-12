@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">Rummanah</string>
+    <string name="default_notification_channel_id" translatable="false">Matgr</string>
+    <string name="GOOGLE_API">AIzaSyAEDL8IDyXQa8Ty3LFpNMnwXSWGIgDU-1I</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="OK">Ok</string>
+    <string name="Home">Home</string>
+    <string name="Register">Register</string>
+    <string name="HasNoAcc">Have no account?</string>
+    <string name="HasAcc">Have account?</string>
+    <string name="Login">Login</string>
+    <string name="OldPassword">Old Password</string>
+    <string name="Password">Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="PassValid">Enter Valid Password</string>
+    <string name="ForgetPass"><u>Forgot Password? </u></string>
+    <string name="ForgetPass2">Forgot Password </string>
+    <string name="EmptyField">Please enter all fields</string>
+    <string name="Email">Email</string>
+    <string name="ValidMail">Please enter valid email</string>
+    <string name="UnKnownError">unexpected error</string>
+    <string name="Image">Image</string>
+    <string name="NoMore">You can\'t choose more</string>
+    <string name="Selected">You select</string>
+    <string name="UpdateDone">Data updated successfully</string>
+    <string name="Mobile">phone number</string>
+    <string name="Resend">Resend the code through: </string>
+    <string name="ResendClick">Click to resend</string>
+    <string name="Second">Second</string>
+    <string name="About">About</string>
+    <string name="Contact">Contact</string>
+    <string name="Msg">Message</string>
+    <string name="Send">Send</string>
+    <string name="ExistPhone">The phone you entered is already registered</string>
+    <string name="ExistEmail">The email you entered is already registered</string>
+    <string name="GotoLocation">Go to the location</string>
+    <string name="OpenGPS">You have to turn on the GPS</string>
+    <string name="GoOpenGPS">turn on the GPS</string>
+    <string name="Confirm">Select your current location</string>
+    <string name="Skip2">Skip</string>
+    <string name="NewPass">Please enter the new password</string>
+    <string name="NoData">No data</string>
+    <string name="FullName">Full Name</string>
+    <string name="MyOrders">My orders</string>
+    <string name="MyFavs">Favorites</string>
+    <string name="Contact2">We are happy to receive your inquiries and suggestions</string>
+    <string name="ForMore">For more, contact</string>
+    <string name="ValidMobile">Please enter the phone number correctly</string>
+    <string name="Conditions">Terms and Conditions</string>
+    <string name="Conditions2"><u>Terms and Conditions</u></string>
+    <string name="Attention">Attention</string>
+    <string name="WantDelete">Do you want to delete?</string>
+    <string name="EditProfile">Edit profile</string>
+    <string name="Error">You may lose some data due to disconnection..and the application is restarted</string>
+    <string name="Videos">Videos</string>
+    <string name="ChangeNumber">Change Number</string>
+    <string name="EnterSmsCode">Enter the six-digit code that \n was sent to a number</string>
+    <string name="Start">Start</string>
+    <string name="SetDefault">Set as default address</string>
+    <string name="SelectAddress">Use this address</string>
+    <string name="DeleteAddress">Delete Address</string>
+    <string name="ChooseBest">discounts</string>
+    <string name="InstantNotifications">Stay home</string>
+    <string name="MostRecentForYou">All food products</string>
+    <string name="MedLawDesc4">All orders are delivered to you at the lowest cost of delivery</string>
+    <string name="MedLawDesc3">Daily discounts and offers on various products</string>
+    <string name="MedLawDesc"><b>Med Law</b> allows you to book appointments for the best and closest lawyers or doctors to you</string>
+    <string name="MedLawDesc2">Shop all daily food items with the best quality and lowest price</string>
+    <string name="Contonio">continuation</string>
+    <string name="Save">Save</string>
+    <string name="ChangePass">Change Password</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="Notifications">Notifications</string>
+    <string name="AllCats">All</string>
+    <string name="Cats">Categories</string>
+    <string name="NonFinishOrder">An error occurred and the order not completed</string>
+    <string name="SearchTxt">What are you looking for?</string>
+    <string name="Search">Search</string>
+    <string name="NoSearch">No search result</string>
+    <string name="ShowAll">Show All</string>
+    <string name="Offers">Offers</string>
+    <string name="Offers2">Offers</string>
+    <string name="TopBrands">Popular Brands</string>
+    <string name="Brands">Brands</string>
+    <string name="Account">Account</string>
+    <string name="Size">Size</string>
+    <string name="DeliveryInfo">Delivery Info</string>
+    <string name="ReturnPolicy">Return Policy</string>
+    <string name="SeeAlso">May like you</string>
+    <string name="DK">KD</string>
+    <string name="Options">Specifications</string>
+    <string name="Description">Description</string>
+    <string name="Cart">Basket</string>
+    <string name="CartMenu">Basket</string>
+    <string name="CartItems">Purchases</string>
+    <string name="Products">Products</string>
+    <string name="Total">Total</string>
+    <string name="Pay">Pay</string>
+    <string name="Cash">Cash</string>
+    <string name="AddToBasket">Add to basket</string>
+    <string name="KNet">K-net</string>
+    <string name="KNetHome">K-net from home</string>
+    <string name="ShippingAddress">Shipping address</string>
+    <string name="PaymentMethod">Payment methods</string>
+    <string name="AddFav">Add to favorites</string>
+    <string name="DeleteFromCart">Remove from cart</string>
+    <string name="AddAddress">Add a new address</string>
+    <string name="DeliveryAddress">Select delivery address</string>
+    <string name="TotalOrders">Total Orders</string>
+    <string name="CountDelivery">Delivery cost</string>
+    <string name="PriceDetails">Price details</string>
+    <string name="AddedToCart">Added to cart</string>
+    <string name="Delete">Delete</string>
+    <string name="MyAddress">My address</string>
+    <string name="Areas">Areas</string>
+    <string name="SetAddressDef">Use this as default</string>
+    <string name="LoginFirst">You must login first</string>
+    <string name="GetLocation">Set your location</string>
+    <string name="AddNewAddress">Add new address</string>
+    <string name="AddressName">Address title</string>
+    <string name="GadaOptional">Gada (optional)</string>
+    <string name="Floor">Floor</string>
+    <string name="Room">Room</string>
+    <string name="StreetName">Street</string>
+    <string name="Block">Block</string>
+    <string name="Area">Area</string>
+    <string name="House">House</string>
+    <string name="Work">Work</string>
+    <string name="Buy">Buy</string>
+    <string name="SelectOption">Select option</string>
+    <string name="HouseType">House type</string>
+    <string name="SelectHouseType">Select house type</string>
+    <string name="AddressAdded">Address added</string>
+    <string name="MustSelectAddress">Must select address</string>
+    <string name="HouseName">House number</string>
+    <string name="ExtraDesc">Additional info</string>
+    <string name="ValidArea">must select area</string>
+    <string name="ValidPayment">Payment type must be selected</string>
+    <string name="ValidType">Type of accommodation must selected</string>
+    <string name="ContinueShopping">Continue shopping</string>
+    <string name="Ended">order is done!</string>
+    <string name="FinishOrder">Your order has been successfully added for more details check your purchase section in your account</string>
+    <string name="OrderID">Order ID</string>
+    <string name="OrderSysID">Follow-up number</string>
+    <string name="Details">Details</string>
+    <string name="OrderCanceled">Order canceled</string>
+    <string name="Amount">Amount</string>
+    <string name="OrderDetails">Order details</string>
+    <string name="ProductsAmount">Products amount: </string>
+    <string name="TotalPrice">Total price</string>
+    <string name="OrderCurrent">order in progress</string>
+    <string name="OrderDone">Delivered</string>
+    <string name="App_Version">App version</string>
+    <string name="users_rates">Users rates</string>
+    <string name="from">from</string>
+    <string name="rates">Rate</string>
+    <string name="HighRates">High rates</string>
+    <string name="customerRates">Customer rates</string>
+    <string name="withoutLogin">Continue without login</string>
+    <string name="addRate">Add rate</string>
+    <string name="ratedBefore">You have rated this product before</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Arabic">Arabic</string>
+    <string name="English">English</string>
+    <string name="minimumRequest">Minimum Order</string>
+    <string name="select_stars">Must select stars</string>
+    <string name="addComment">Add your comment</string>
+
+    <string-array name="nav_drawer_items">
+        <item></item>
+        <item>Home</item>
+        <item>Account</item>
+        <item>About</item>
+        <item>Categories</item>
+        <item>Offers</item>
+        <item>Cart</item>
+        <item>Return policy</item>
+        <item>Share a friend</item>
+        <item>Terms and conditions</item>
+        <item>Notifications</item>
+        <item>Contact us</item>
+        <item>Change language</item>
+        <item>Rate app</item>
+    </string-array>
+
+    <string-array name="nav_account">
+        <item></item>
+        <item>My orders</item>
+        <item>Favorite Lists</item>
+        <item>Delivery Addresses</item>
+        <item>Edit my profile</item>
+        <item>Logout</item>
+    </string-array>
+</resources>

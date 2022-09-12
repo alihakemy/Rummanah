@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/activity_header2" />
+
+        <RelativeLayout
+            android:id="@+id/SearchArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Header"
+            android:background="#FFFFFF">
+
+            <SearchView
+                android:id="@+id/SearchCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_light_gray_radius4"
+                android:drawableLeft="@mipmap/ic_search2"
+                android:layoutDirection="rtl"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="#8F8F8F"
+                android:textColorHint="#8F8F8F"
+                android:textDirection="rtl"></SearchView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/NoData"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_Add"
+            android:layout_below="@+id/SearchArea"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:layoutDirection="rtl"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"></ListView>
+
+        <ImageView
+            android:id="@+id/btn_Add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/plus"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

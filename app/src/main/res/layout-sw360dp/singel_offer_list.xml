@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/List"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/FullAd"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@mipmap/def2" />
+
+    <ImageView
+        android:id="@+id/MarginAd"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/FullAd"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@mipmap/def2" />
+
+    <LinearLayout
+        android:id="@+id/SmallAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MarginAd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="visible"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/SmallAd_1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@mipmap/def2" />
+
+        <ImageView
+            android:id="@+id/SmallAd_2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+           />
+    </LinearLayout>
+</RelativeLayout>

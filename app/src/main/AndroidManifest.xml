@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.usmart.com.rummanah">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.usmart.com.rummanah.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="helpers.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ProductRatesActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name="broadcast.ConnectionChangeReceiver"
+            android:exported="true"
+            android:label="NetworkConnection">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="rummanah.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_path"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysVisible" />
+        <activity
+            android:name=".Explane1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Explane2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Explane3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Explane4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllCats"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Product"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Brands"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notis"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReturnPolicy"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectAddress"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Offers"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddAddress"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyOrders"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Products"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Delivery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyFavs"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectArea"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Checkout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinishOrder"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductOptions"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductDesc"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetRegister"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".UpdateProfile"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewPassProfile"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Conditions"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductsOffers"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contact"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Offline"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhotoGallery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Map"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewPass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Search"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductsBrand"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapArea"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinishOrderOnline"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinishOrderOnlineError"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studio.Images"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studio.Videos"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="notifications.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/noti_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorHeader" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/GOOGLE_API" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

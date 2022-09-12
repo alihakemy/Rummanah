@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/activity_header2" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_light_gray_radius4"
+            android:drawableLeft="@mipmap/ic_search2"
+            android:drawablePadding="8dp"
+
+            android:gravity="right|center_vertical"
+            android:hint="@string/Search"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#2699FB"
+            android:textColorHint="#BCBCBC"
+            android:textSize="12sp"
+            android:textStyle="bold"></AutoCompleteTextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+     />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

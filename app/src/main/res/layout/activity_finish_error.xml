@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:id="@+id/ActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/CancelAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/cancel" />
+
+        <ImageView
+            android:id="@+id/Finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CancelAll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/error" />
+
+        <RelativeLayout
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Finish"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                android:text=""
+                android:textColor="#444444"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Price_Curr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/tv_Price"
+                android:gravity="center"
+                android:text="@string/DK"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_Finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Price"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text="@string/NonFinishOrder"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_Continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Finish"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_red_radius4"
+            android:elevation="2dp"
+            android:text="@string/ContinueShopping"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

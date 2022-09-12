@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/Scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/arrow_forward" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/customerRates"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <RatingBar
+                        android:id="@+id/rb_rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layoutDirection="inherit"
+                        android:progressTint="#FFC107"
+                        android:rating="3.5" />
+
+                    <TextView
+                        android:id="@+id/tv_averageRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="110dp"
+                        android:layout_toLeftOf="@+id/rb_rating"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/quantum_black_100" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_totalRates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:alpha="0.3"
+                    android:background="@color/quantum_grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/HighRates"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_rates"
+                    android:layout_width="match_parent"
+                    android:layout_height="480dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp" />
+
+                <utils.ExpandableHeightGridView
+                    android:id="@+id/lvRates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layoutDirection="inherit"
+                    android:numColumns="1"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="true"
+                    android:verticalSpacing="5dp"
+                    android:visibility="gone"></utils.ExpandableHeightGridView>
+
+                <TextView
+                    android:id="@+id/noRates"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/NoData"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_white_radius15"
+    android:layoutDirection="ltr"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:text="اسم المنتج"
+            android:textColor="#313131"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="22/9/2020"
+            android:textColor="#313131"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Address"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="22/9/2020"
+            android:textColor="#313131"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/chk_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_City"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/checked5" />
+
+        <TextView
+            android:id="@+id/tv_DefAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_City"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/chk_address"
+            android:gravity="center"
+            android:text="@string/SetAddressDef"
+            android:textColor="#313131"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:text="@string/Delete"
+        android:textColor="#DB3022"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</FrameLayout>

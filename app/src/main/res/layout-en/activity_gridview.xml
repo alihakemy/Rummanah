@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/activity_header2" />
+
+        <RelativeLayout
+            android:id="@+id/SearchArea"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/Header">
+
+            <SearchView
+                android:id="@+id/SearchCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_light_gray_radius4"
+                android:drawableLeft="@mipmap/ic_search2"
+                android:layoutDirection="rtl"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="#8F8F8F"
+                android:textColorHint="#8F8F8F"
+                android:textDirection="rtl"></SearchView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/NoData"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <GridView
+            android:id="@+id/listViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SearchArea"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:horizontalSpacing="10dp"
+            android:layoutDirection="rtl"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"
+            android:verticalSpacing="15dp"></GridView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:background="@mipmap/hide"
+        android:id="@+id/HideAll"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone" />
+
+</FrameLayout>

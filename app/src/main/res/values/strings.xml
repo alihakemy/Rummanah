@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">رمّانة</string>
+    <string name="default_notification_channel_id" translatable="false">Matgr</string>
+    <string name="GOOGLE_API">AIzaSyAEDL8IDyXQa8Ty3LFpNMnwXSWGIgDU-1I</string>
+    <string name="Welcome">مرحبا بكم</string>
+    <string name="Yes">نعم</string>
+    <string name="No">لا</string>
+    <string name="OK">حسنا</string>
+    <string name="Home">الرئيسية</string>
+    <string name="Register">تسجيل جديد</string>
+    <string name="HasNoAcc">ليس لديك حساب ؟ </string>
+    <string name="HasAcc">لديك حساب ؟ </string>
+    <string name="Login">تسجيل دخول</string>
+    <string name="OldPassword">كلمة المرور القديمة</string>
+    <string name="Password">كلمة المرور</string>
+    <string name="ConfirmPassword">إعادة كتابة كلمة المرور</string>
+    <string name="PassValid">ادخل كلمة المرور بشكل صحيح</string>
+    <string name="ForgetPass"><u>نسيت كلمة المرور ؟</u></string>
+    <string name="ForgetPass2">نسيت كلمة المرور </string>
+    <string name="EmptyField">من فضلك ادخل جميع الحقول</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="ValidMail">من فضلك ادخل البريد الالكتروني بشكل صحيح</string>
+    <string name="UnKnownError">خطأ غير متوقع</string>
+    <string name="Image">Image</string>
+    <string name="NoMore">لا تستطيع الاختيار اكثر</string>
+    <string name="Selected">You select</string>
+    <string name="UpdateDone">تم تحديث البيانات بنجاح</string>
+    <string name="Mobile">رقم الهاتف</string>
+    <string name="Resend">أعادة إرسال الرمز خلال : </string>
+    <string name="ResendClick">إضغط لإعادة الإرسال</string>
+    <string name="Second">ثانية</string>
+    <string name="About">عن التطبيق</string>
+    <string name="Contact">اتصل بنا</string>
+    <string name="Msg">الرساله</string>
+    <string name="Send">إرسال</string>
+    <string name="ExistPhone">الهاتف الذي ادخلته مسجل من قبل </string>
+    <string name="ExistEmail">البريد الالكتروني الذي ادخلته مسجل من قبل</string>
+    <string name="GotoLocation">الذهاب للموقع</string>
+    <string name="OpenGPS">يجب عليك تشغيل خاصية تحديد الموقع اولا</string>
+    <string name="GoOpenGPS">تشغيل تحديد المواقع</string>
+    <string name="Confirm">حدد موقعك الحالي</string>
+    <string name="Skip2">تخطي</string>
+    <string name="NewPass">يرجى إدخال كلمة المرور الجديدة</string>
+    <string name="NoData">لا يوجد اي بيانات</string>
+    <string name="FullName">الأسم بالكامل</string>
+    <string name="MyOrders">طلباتي</string>
+    <string name="MyFavs">قائمة المفضلة</string>
+    <string name="Contact2">نحن سعداء لتلقي استفسارتكم واقتراحاتكم</string>
+    <string name="ForMore">للمزيد اتصل بـ</string>
+    <string name="ValidMobile">من فضلك ادخل رقم الهاتف بشكل صحيح</string>
+    <string name="Conditions">شروط وأحكام</string>
+    <string name="Conditions2"><u>شروط وأحكام</u></string>
+    <string name="Attention">تنبيه</string>
+    <string name="WantDelete">هل تريد الحذف ؟</string>
+    <string name="EditProfile">تعديل الملف الشخصي</string>
+    <string name="Error">قد تفقد بعض البيانات بسبب قطع الاتصال .. ويتم اعاده تشغيل التطبيق</string>
+    <string name="Videos">فيديو</string>
+    <string name="ChangeNumber">تغيير الرقم</string>
+    <string name="EnterSmsCode">أدخل الرمز المكون من ستة أرقام الذي \n تم ارساله لرقم</string>
+    <string name="Start">ابدأ</string>
+    <string name="SetDefault">تعيين كعنوان افتراضي</string>
+    <string name="SelectAddress">استخدم هذا العنوان</string>
+    <string name="DeleteAddress">حذف العنوان</string>
+    <string name="ChooseBest">خصومات</string>
+    <string name="InstantNotifications">خليك بالبيت</string>
+    <string name="MostRecentForYou">جميع المنتجات الغذائية</string>
+    <string name="MedLawDesc4">توصلك جميع الطلبات بأقل تكلفة توصيل</string>
+    <string name="MedLawDesc3">خصومات وعروض يومية على مختلف المنتجات</string>
+    <string name="MedLawDesc">يتيح لك تطبيق  <b> ميد لو </b>  حجز مواعيد للمحامين او الأطباء الأفضل والأقرب اليك</string>
+    <string name="MedLawDesc2">تسوق جميع المواد الغذائية اليومية بأفضل جودة وأقل سعر</string>
+    <string name="Contonio">متابعة</string>
+    <string name="Save">حفظ</string>
+    <string name="ChangePass">تغيير كلمة المرور</string>
+    <string name="DOB">تاريخ الميلاد</string>
+    <string name="Notifications">الإشعارات</string>
+    <string name="AllCats">الكل</string>
+    <string name="Cats">الأقسام</string>
+    <string name="NonFinishOrder">حدث خطأ ولم يكتمل الطلب</string>
+    <string name="SearchTxt">عن ماذا تبحث؟</string>
+    <string name="Search">البحث</string>
+    <string name="NoSearch">لا يوجد نتيجة بحث</string>
+    <string name="ShowAll">عرض الكل</string>
+    <string name="Offers">عروضنا المفضلة</string>
+    <string name="Offers2">العروض</string>
+    <string name="TopBrands">أشهر الماركات</string>
+    <string name="Brands">الماركات</string>
+    <string name="Account">الحساب</string>
+    <string name="Size">الحجم</string>
+    <string name="DeliveryInfo">معلومات التوصيل</string>
+    <string name="ReturnPolicy">سياسية الارجاع</string>
+    <string name="SeeAlso">يمكن ان يعجبك أيضاً</string>
+    <string name="DK">د.ك</string>
+    <string name="Options">المواصفات</string>
+    <string name="Description">الوصف</string>
+    <string name="Cart">سلة المشتريات</string>
+    <string name="CartMenu">السلة</string>
+    <string name="CartItems">المشتريات</string>
+    <string name="Products">المنتجات</string>
+    <string name="Total">المجموع</string>
+    <string name="Pay">ادفع</string>
+    <string name="Cash">الدفع كاش</string>
+    <string name="AddToBasket">أضف إلى السلة</string>
+    <string name="KNet">كي-نت</string>
+    <string name="KNetHome">كي-نت من البيت</string>
+    <string name="ShippingAddress">عنوان التوصيل</string>
+    <string name="PaymentMethod">طرق الدفع</string>
+    <string name="AddFav">أضف للمفضلة</string>
+    <string name="DeleteFromCart">حذف من السلة</string>
+    <string name="AddAddress">أضف عنوان جديد</string>
+    <string name="DeliveryAddress">أختر عنوان التوصيل</string>
+    <string name="TotalOrders">مجموع الطلبات</string>
+    <string name="CountDelivery">تكلفة التوصيل</string>
+    <string name="PriceDetails">تفاصيل السعر</string>
+    <string name="AddedToCart">تم الاضافه للسلة</string>
+    <string name="Delete">حذف</string>
+    <string name="MyAddress">عناويني</string>
+    <string name="Areas">المناطق</string>
+    <string name="SetAddressDef">استخدم هذا كعنوان اساسي</string>
+    <string name="LoginFirst">يجب عليك تسجيل الدخول أولا</string>
+    <string name="GetLocation">تحديد موقعك</string>
+    <string name="AddNewAddress">أضف عنوان</string>
+    <string name="AddressName">اسم العنوان</string>
+    <string name="GadaOptional">جادة ( اختياري )</string>
+    <string name="Floor">الطابق</string>
+    <string name="Room">رقم الشقة او الغرفة</string>
+    <string name="StreetName">الشارع</string>
+    <string name="Block">القطعة</string>
+    <string name="Area">المنطقة</string>
+    <string name="House">منزل</string>
+    <string name="Work">عمل</string>
+    <string name="Buy">شراء</string>
+    <string name="SelectOption">حدد اختيارك</string>
+    <string name="HouseType">نوع السكن</string>
+    <string name="SelectHouseType">اختر نوع السكن</string>
+    <string name="AddressAdded">تم اضافة العنوان</string>
+    <string name="MustSelectAddress">يجب اختيار عنوان أولا</string>
+    <string name="HouseName">رقم المنزل</string>
+    <string name="ExtraDesc">ارشادات إضافية</string>
+    <string name="ValidArea">يجب اختيار منطقة</string>
+    <string name="ValidPayment">يجب اختيار نوع الدفع</string>
+    <string name="ValidType">يجب اختيار نوع السكن</string>
+    <string name="ContinueShopping">تابع التسوق</string>
+    <string name="Ended">تم الطلب !</string>
+    <string name="FinishOrder">تم إضافة طلبك بنجاح للمزيد من التفاصيل قم بفحص قسم الشراء الخاص بك في حسابك</string>
+    <string name="OrderID">رقم الطلب</string>
+    <string name="OrderSysID">رقم المتابعة</string>
+    <string name="Details">التفاصيل</string>
+    <string name="OrderCanceled">ملغي</string>
+    <string name="Amount">العدد</string>
+    <string name="OrderDetails">معلومات الطلب</string>
+    <string name="ProductsAmount">عدد المنتجات : </string>
+    <string name="TotalPrice">المبلغ الاجمالي</string>
+    <string name="OrderCurrent">الطلب جارى</string>
+    <string name="OrderDone">تم التسليم</string>
+    <string name="App_Version">نسخة التطبيق</string>
+    <string name="users_rates">تقييمات العملاء</string>
+    <string name="from">من</string>
+    <string name="rates">تقييم</string>
+    <string name="HighRates">أعلى التقييمات</string>
+    <string name="customerRates">تقييمات العملاء</string>
+    <string name="withoutLogin">استمرار بدون تسجيل دخول</string>
+    <string name="addRate">أضف التقييم</string>
+    <string name="ratedBefore">لقد قيمت هذا المنتج من قبل</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="Arabic">اللغة العربية</string>
+    <string name="English">English</string>
+    <string name="minimumRequest">الحد الأدنى للطلب</string>
+    <string name="select_stars">رجاء تحديد التقييم أولا</string>
+    <string name="addComment">رجاء كتابة تعليق</string>
+
+
+
+    <string-array name="nav_drawer_items">
+        <item></item>
+        <item>الرئيسية</item>
+        <item>الحساب</item>
+        <item>عن التطبيق</item>
+        <item>الأقسام</item>
+        <item>العروض</item>
+        <item>السلة</item>
+        <item>سياسة الارجاع</item>
+        <item>مشاركة مع صديق</item>
+        <item>شروط وأحكام</item>
+        <item>الإشعارات</item>
+        <item>تواصل معنا</item>
+        <item>تغيير اللغة</item>
+        <item>تقييم التطبيق</item>
+    </string-array>
+
+    <string-array name="nav_account">
+        <item></item>
+        <item>طلباتي</item>
+        <item>القوائم المفضلة</item>
+        <item>عناوين التوصيل</item>
+        <item>تعديل بياناتي</item>
+        <item>تسجيل خروج</item>
+    </string-array>
+</resources>

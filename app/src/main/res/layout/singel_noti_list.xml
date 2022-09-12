@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radius1"
+    android:gravity="left"
+    android:layoutDirection="ltr"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp" >
+
+    <ImageView
+        android:id="@+id/iv_Feeds"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="484dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/iv_Feeds"
+        android:layout_toRightOf="@+id/tv_date"
+        android:gravity="right"
+        android:text="Title"
+        android:textColor="#444444"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/iv_Feeds"
+        android:gravity="right"
+        android:text="Desc fdf sdf sdf sdf sdf "
+        android:textColor="#444444"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="Title"
+        android:textColor="#5e5e5e"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

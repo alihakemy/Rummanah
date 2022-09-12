@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/ActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeader"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/MenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/close" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/Noti"
+            android:layout_toRightOf="@+id/MenuButton"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/Noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="gotoNoti">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="25dp"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/listViewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ActionBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="#fff"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:smoothScrollbar="true"
+        android:verticalSpacing="10dp"></GridView>
+
+</RelativeLayout>

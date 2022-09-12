@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:layoutDirection="ltr"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp" >
+
+    <TextView
+        android:id="@+id/tv_icon1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="sdfsdfsdfdsf"
+        android:drawableRight="@mipmap/lang_icon"
+        android:drawableLeft="@mipmap/back2"
+        android:textColor="#386386"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:id="@+id/Header"
+            android:visibility="gone"
+            layout="@layout/activity_header_sms" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Header"
+            android:background="@drawable/btn_wight_radius_top"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/Logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/Enter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="start"
+                        android:gravity="right"
+                        android:text="@string/EnterSmsCode"
+                        android:textColor="#686868"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MobileNumer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="125dp"
+                        android:layout_marginBottom="40dp"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="start"
+                        android:gravity="right"
+                        android:text="+965114878787"
+                        android:textColor="#006ED1"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ChaneNumer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_toLeftOf="@+id/MobileNumer"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="start"
+                        android:gravity="right"
+                        android:text="@string/ChangeNumber"
+                        android:textColor="#006ED1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Logo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <utils.OtpEditText
+                        android:id="@+id/edit_Code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:digits="1234567890"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/SendAgain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Mobile"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:id="@+id/ReSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:ellipsize="start"
+                        android:text="@string/Resend"
+                        android:textColor="#686868"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/ReSend"
+                        android:ellipsize="start"
+                        android:text=""
+                        android:textColor="#686868"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_Set_Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SendAgain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_blue"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/Contonio"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/Conditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:ellipsize="start"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:text="@string/Conditions2"
+                        android:textColor="#006ED1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="135dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/Conditions"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/colorBlack"
+                        android:orientation="horizontal"></LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

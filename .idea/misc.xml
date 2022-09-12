@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/Matgr/app/src/main/res/layout/activity_product.xml" value="0.7212301587301587" />
+        <entry key="..\:/FreeLance/matgar-android-main/app/src/main/res/layout/activity_product.xml" value="0.4025" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout-en/activity_header_checkout.xml" value="0.25" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout-sw360dp/activity_cart.xml" value="0.375" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout-sw360dp/activity_header_checkout.xml" value="0.375" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout-sw410dp/activity_header_checkout.xml" value="0.25" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_cart.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_checkout.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_finish.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_header2.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_header_checkout.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_home.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_menu.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout/activity_webview.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/StudioProjects/matgar-android-main/app/src/main/res/layout/activity_checkout.xml" value="0.6" />
+        <entry key="..\:/Users/Abdelrahman Hesham/StudioProjects/matgar-android-main/app/src/main/res/layout/activity_login.xml" value="0.6" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/border_bottom.xml" value="0.1725" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_blue_radius10.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_blue_radius20.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_blue_radius_left_bottom35.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_blue_radius_right_bottom35.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_gray_radius10.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_lightblue_radius15_75.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_red_radius3.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/btn_white_radius15_75.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/green_border.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/products_rounded.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/red_round.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/drawable/red_top_right.xml" value="0.1495" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_add_address.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_allcats.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_cart.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_checkout.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_explan2.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_forget_password.xml" value="0.15138888888888888" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_gridview.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_gridview_products.xml" value="0.17569444444444443" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_header2.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_header_home.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_header_product.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_header_products.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_home.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_listview.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_listview_orders.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_menu.xml" value="0.17569444444444443" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_order_details.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_product.xml" value="0.17569444444444443" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_product_rates.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/activity_webview.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/bottom_navigation.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/drawer_list_item.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/drawer_list_item_title.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/layout_ad.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/layout_brands.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/layout_cats.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/layout_offers.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_address_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_brand_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_cart_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_cat_tap.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_option_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_order_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_order_product_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_product_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/singel_product_list2.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-en/single_high_rate.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_add_address.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_allcats.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_cart.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_checkout.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_contact.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_desc.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_explan1.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_explan2.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_explan3.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_explan4.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_finish.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_finish_error.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_forget_password.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_gridview.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_gridview_products.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_header2.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_header_cart.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_header_checkout.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_header_home.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_header_product.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_header_products.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_home.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_listview.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_listview_noti.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_listview_options.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_listview_orders.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_login.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_map.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_map_filter.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_menu.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_new_password.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_new_password_profile.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_offers.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_offline.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_order_details.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_product.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_profile.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_register.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_search_by_name.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_slider.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_splach.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/activity_webview.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/drawer_list_item.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/drawer_list_item_title.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/layout_cats.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/select_rate.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/singel_cat_tap.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/singel_option_list.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/singel_order_product_list.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/singel_product_list.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw360dp/singel_product_list2.xml" value="0.38125" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_allcats.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_cart.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_checkout.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_contact.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_explan1.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_explan4.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_gridview.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_gridview_products.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_header2.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_header_cart.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_header_checkout.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_header_home.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_header_product.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_header_products.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_home.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_login.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_menu.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_offers.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_order_details.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_product.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/activity_profile.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/select_rate.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/singel_cat_tap.xml" value="0.264" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/singel_order_product_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/singel_product_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout-sw410dp/singel_product_list2.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_allcats.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_cart.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_checkout.xml" value="0.5270833333333333" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_contact.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_explan1.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_explan2.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_explan3.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_explan4.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_gridview_products.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_header2.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_header_cart.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_header_checkout.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_header_home.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_header_product.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_header_products.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_home.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_login.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_menu.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_offers.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_order_details.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_product.xml" value="0.536" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_product_rates.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_profile.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_sms_code.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/activity_webview.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/bottom_navigation.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/drawer_list_item_title.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/msg_noads_options.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/select_rate.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_brand_list.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_brand_list2.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_cat_tap.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_cats_home_list.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_offer_list.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_order_product_list.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_product_list.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_product_list2.xml" value="0.536" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_rate_list.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/singel_text.xml" value="0.61" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/layout/single_high_rate.xml" value="0.190625" />
+        <entry key="..\:/Users/mahmo/AndroidStudioProjects/Matgr/app/src/main/res/menu/navigation_home.xml" value="0.190625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/profile"
+        android:title="@string/Account" />
+
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/offers"
+        android:title="@string/Offers2" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/shopping_cart"
+        android:title="السلة" />
+
+    <item
+        android:id="@+id/navigation_cats"
+        android:icon="@drawable/groups"
+        android:title="@string/Cats" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/Home" />
+</menu>

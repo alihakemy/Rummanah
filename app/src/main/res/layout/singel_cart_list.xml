@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:paddingBottom="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_Feeds"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/def" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_Feeds"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_Feeds"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="اسم المنتج"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Title"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_BeforeDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="#A4A4A4"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_MainPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="6.00 د.ك"
+                    android:textColor="#2D2A2A"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/Amount"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Price"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_Add"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/plus2" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_Add"
+                    android:layout_toRightOf="@+id/iv_Remove"
+                    android:background="@drawable/btn_blue_white_radius4"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/iv_Remove"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/remove" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_DelFromCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Amount"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/ic_delete"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:text="@string/DeleteFromCart"
+                android:textColor="#000"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Amount"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@+id/tv_DelFromCart"
+                android:drawableRight="@mipmap/non_like"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:text="@string/AddFav"
+                android:textColor="#000"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

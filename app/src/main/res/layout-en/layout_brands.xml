@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/TopBrandsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="left"
+        android:text="@string/TopBrands"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/BrandsAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:gravity="left"
+        android:text="@string/ShowAll"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lvTopBrands"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TopBrandsIcon"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
