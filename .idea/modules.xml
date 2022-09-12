@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matgar-android-main.iml" filepath="$PROJECT_DIR$/.idea/modules/matgar-android-main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/matgar-android-main.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Rummanah.iml" filepath="$PROJECT_DIR$/.idea/modules/Rummanah.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Rummanah.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Rummanah.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Rummanah.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Rummanah.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Rummanah.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Rummanah.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Rummanah.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Rummanah.app.unitTest.iml" />
     </modules>
   </component>
 </project>
