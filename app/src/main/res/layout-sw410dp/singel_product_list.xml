@@ -106,7 +106,7 @@
             <RelativeLayout
                 android:id="@+id/ll_count"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="30dp"
                 android:layout_below="@+id/Price"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
@@ -138,8 +138,8 @@
 
                 <ImageView
                     android:id="@+id/iv_minus"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="40dp"
                     android:src="@drawable/minus_sign" />
@@ -158,8 +158,8 @@
 
                 <ImageView
                     android:id="@+id/iv_plus"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="0dp"
                     android:src="@drawable/plus_sign" />

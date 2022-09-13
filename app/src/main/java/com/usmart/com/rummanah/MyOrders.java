@@ -187,8 +187,11 @@ public class MyOrders extends Activity {
 
         Url = Values.Link_service + "orders/" + lang + "/v1";
 
-        client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                + " " + UserTokenHolder.getInstance().getData().access_token);
+        if(UserTokenHolder.getInstance().getData()!=null){
+            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
+                    + " " + UserTokenHolder.getInstance().getData().access_token);
+
+        }
 
         client.get(Url, new AsyncHttpResponseHandler() {
             @Override

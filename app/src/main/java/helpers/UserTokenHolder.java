@@ -20,7 +20,7 @@ public class UserTokenHolder {
     private static final UserTokenHolder holder = new UserTokenHolder();
 
     public static UserTokenHolder getInstance() {
-        return holder;
+        return new UserTokenHolder();
     }
 
 }
