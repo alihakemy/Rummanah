@@ -363,8 +363,8 @@ public class Offers extends Activity {
                     runOnUiThread(() -> {
                         if (!Result.success) {
                             if (Result.code == 401) {
-                                Intent i = new Intent(activity, Login.class);
-                                startActivity(i);
+//                                Intent i = new Intent(activity, Login.class);
+//                                startActivity(i);
                             } else {
                                 loadMsg(Result.message);
                             }

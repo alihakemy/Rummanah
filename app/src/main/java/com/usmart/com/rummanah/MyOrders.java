@@ -299,7 +299,7 @@ public class MyOrders extends Activity {
                 Token.token_type = "";
                 Token.expires_in = "";
                 UserTokenHolder.getInstance().setData(Token);
-                startActivity(new Intent(activity, Login.class));
+//                startActivity(new Intent(activity, Login.class));
             }
         } catch (Exception e) {
 

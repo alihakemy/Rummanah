@@ -164,7 +164,7 @@ public class Home extends Activity {
         ll_categories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this, MyOrders.class);
+                Intent intent = new Intent(Home.this, AllCats.class);
                 startActivity(intent);
             }
         });
