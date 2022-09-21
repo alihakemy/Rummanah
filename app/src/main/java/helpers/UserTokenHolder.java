@@ -3,7 +3,7 @@ package helpers;
 import dataInLists.DataInLogin;
 
 public class UserTokenHolder {
-    private DataInLogin.Tokens FaceID;
+    private DataInLogin.Tokens FaceID = new DataInLogin.Tokens();
 
     public DataInLogin.Tokens getData() {
         return FaceID;
@@ -13,9 +13,7 @@ public class UserTokenHolder {
         this.FaceID = data;
     }
 
-    public void setData() {
-        this.FaceID = null;
-    }
+
 
     private static final UserTokenHolder holder = new UserTokenHolder();
 

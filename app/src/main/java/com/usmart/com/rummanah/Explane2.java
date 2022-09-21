@@ -2,6 +2,7 @@ package com.usmart.com.rummanah;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Typeface;
@@ -38,7 +39,9 @@ public class Explane2 extends Activity {
         setContentView(R.layout.activity_explan2);
         fontMedim = Typeface.createFromAsset(activity.getAssets(), "fonts/GE_SS_Two_Medium.otf");
         fontLight = Typeface.createFromAsset(activity.getAssets(), "fonts/GE_SS_Two_Light.otf");
-
+        SharedPreferences splash = getSharedPreferences("Splash", 0);
+        SharedPreferences.Editor editor = splash.edit();
+        editor.putString("isLogin", "login");
         lang = Values.SharedPreferences_FileNameLangSelect;
         Log.d(TAG, "value of selected language: " + Values.SharedPreferences_FileNameLangSelect);
 
@@ -57,12 +60,15 @@ public class Explane2 extends Activity {
             finish();
             startActivity(intent);
             overridePendingTransition(R.anim.fadein_fast, R.anim.fadeout_fast);
+            splash.edit().putString("Splash","Splash").apply();
         });
         btn_Skip.setOnClickListener(v -> {
             Intent intent = new Intent(activity, Home.class);
             finish();
             startActivity(intent);
             overridePendingTransition(R.anim.fadein_fast, R.anim.fadeout_fast);
+            splash.edit().putString("Splash","Splash").apply();
+
         });
 
     }

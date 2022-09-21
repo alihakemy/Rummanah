@@ -243,8 +243,13 @@ public class AddAddress extends FragmentActivity {
             String Url = Values.Link_service + "addresses/" + lang + "/v1";
             String Auth, json;
             if (LoginHolder.getInstance().getData().equals("login")) {
-                Auth = UserTokenHolder.getInstance().getData().token_type
-                        + " " + UserTokenHolder.getInstance().getData().access_token;
+                try {
+                    Auth = UserTokenHolder.getInstance().getData().token_type
+                            + " " + UserTokenHolder.getInstance().getData().access_token;
+                }catch (Exception  e){
+                    Auth = "";
+                }
+
                 json = new StringBuilder()
                         .append("{")
                         .append("\"address_type\":" + AddressType + ",")

@@ -18,13 +18,18 @@ public class NetWork {
 	}
 	
 	public static void gotoError(Activity act){
-		ConnectionChangeReceiver myReceiver = new ConnectionChangeReceiver();
-		IntentFilter intentFilter = new IntentFilter("broadcast.ConnectionChangeReceiver");
-		act.registerReceiver(myReceiver, intentFilter);
+		try {
+			ConnectionChangeReceiver myReceiver = new ConnectionChangeReceiver();
+			IntentFilter intentFilter = new IntentFilter("broadcast.ConnectionChangeReceiver");
+			act.registerReceiver(myReceiver, intentFilter);
 
-		Intent intent = new Intent("broadcast.ConnectionChangeReceiver");
+			Intent intent = new Intent("broadcast.ConnectionChangeReceiver");
 
-		act.sendBroadcast(intent);
+			act.sendBroadcast(intent);
+		}catch (Exception e){
+
+		}
+
 	}
 
 }

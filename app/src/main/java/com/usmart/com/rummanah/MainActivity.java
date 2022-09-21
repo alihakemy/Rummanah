@@ -67,12 +67,22 @@ public class MainActivity extends Activity {
         //lang = Values.SharedPreferences_FileNameLangSelect;
 
         FirebaseMessaging.getInstance().subscribeToTopic("USMART_MTGR");
+        SharedPreferences login = getSharedPreferences(Values.SharedPreferences_FileName, 0);
+        login.getString("isLogin", "login");
 
-        UserTokenHolder.getInstance().setData();
+
+
         UserMobileHolder.getInstance().setData("");
         UserPhotoHolder.getInstance().setData("");
         ProductHolder.getInstance().setData(Integer.toString(0));
         UserTypeHolder.getInstance().setData("user");
+
+
+
+        UserTokenHolder.getInstance().getData().access_token=   login.getString("Token","12");
+        UserTokenHolder.getInstance().getData().token_type=login.getString("Token_Type","");
+        login.getString("Token_Exp", "");
+
         ImageLoader.getInstance().init(ImageLoaderConfiguration.createDefault(getBaseContext()));
         if (lang == "en") {
             LangHolder.getInstance().setData("en");
@@ -153,13 +163,23 @@ public class MainActivity extends Activity {
                     editor.putString("Token_Type", "");
                     editor.putString("Token_Exp", "");
                     editor.commit();
+                    SharedPreferences splash = getSharedPreferences("Splash", 0);
 
 
                     if (NetWork.isNetworkAvailable(getApplicationContext()) == true) {
-                        Intent intent = new Intent(MainActivity.this, Explane2.class);
-                        finish();
-                        startActivity(intent);
-                        overridePendingTransition(R.anim.slide_bottom_to_top, R.anim.slide_top_to_bottom);
+                        if(splash.getString("Splash","").equals("")){
+                            Intent intent = new Intent(MainActivity.this, Explane2.class);
+                            finish();
+                            startActivity(intent);
+                            overridePendingTransition(R.anim.slide_bottom_to_top, R.anim.slide_top_to_bottom);
+                        }else{
+                            Intent intent = new Intent(MainActivity.this, Home.class);
+                            finish();
+                            startActivity(intent);
+                            overridePendingTransition(R.anim.fadein_fast, R.anim.fadeout_fast);
+                        }
+
+
                     } else {
                         NetWork.gotoError(MainActivity.this);
                     }
@@ -171,12 +191,20 @@ public class MainActivity extends Activity {
                     UserMobileHolder.getInstance().setData(UserMobile);
                     UserEmailHolder.getInstance().setData(UserEmail);
                     UserTokenHolder.getInstance().setData(Token);
+                    SharedPreferences splash = getSharedPreferences("Splash", 0);
 
                     if (NetWork.isNetworkAvailable(getApplicationContext()) == true) {
-                        Intent intent = new Intent(MainActivity.this, Explane2.class);
-                        finish();
-                        startActivity(intent);
-                        overridePendingTransition(R.anim.slide_bottom_to_top, R.anim.slide_top_to_bottom);
+                        if(splash.getString("Splash","").equals("")){
+                            Intent intent = new Intent(MainActivity.this, Explane2.class);
+                            finish();
+                            startActivity(intent);
+                            overridePendingTransition(R.anim.slide_bottom_to_top, R.anim.slide_top_to_bottom);
+                        }else{
+                            Intent intent = new Intent(MainActivity.this, Home.class);
+                            finish();
+                            startActivity(intent);
+                            overridePendingTransition(R.anim.fadein_fast, R.anim.fadeout_fast);
+                        }
                     } else {
                         NetWork.gotoError(MainActivity.this);
                     }

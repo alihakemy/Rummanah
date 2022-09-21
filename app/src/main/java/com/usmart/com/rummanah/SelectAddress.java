@@ -158,12 +158,18 @@ public class SelectAddress extends Activity {
 
         Url = Values.Link_service + "addresses/" + lang + "/v1";
 
-        if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
-        } else {
+        try {
+            if (LoginHolder.getInstance().getData().equals("login")) {
+                client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
+                        + " " + UserTokenHolder.getInstance().getData().access_token);
+            } else {
+                client.addHeader("Authorization", "" + Values.Authorization_User);
+            }
+        }catch (Exception e){
             client.addHeader("Authorization", "" + Values.Authorization_User);
+
         }
+
         client.get(Url, new AsyncHttpResponseHandler() {
             @Override
             public void onStart() {
