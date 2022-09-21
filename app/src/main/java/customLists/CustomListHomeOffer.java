@@ -23,6 +23,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -150,8 +151,8 @@ public class CustomListHomeOffer extends RecyclerView.Adapter<CustomListHomeOffe
                 .considerExifParams(true)
                 .bitmapConfig(Bitmap.Config.RGB_565)
                 .build();
-        ImageLoader.getInstance().displayImage(Values.Link_Image + Data.get(position).image, holder.imageView, options);
-
+        Glide.with(holder.imageView.getContext())
+                        .load(Values.Link_Image + Data.get(position).image) .into(holder.imageView);
         holder.List.setOnClickListener(v -> {
             Intent i = new Intent(Activity, Product.class);
             i.putExtra("ID", Data.get(position).id);

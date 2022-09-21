@@ -24,6 +24,7 @@ import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -120,7 +121,9 @@ public class CustomListCart extends ArrayAdapter<DataInCart.Carts> {
                 .bitmapConfig(Bitmap.Config.RGB_565)
                 .displayer(new RoundedBitmapDisplayer(5))
                 .build();
-        ImageLoader.getInstance().displayImage(Values.Link_Image + Data.get(position).image, imageView, options);
+        Glide.with(imageView.getContext())
+                        .load(Values.Link_Image + Data.get(position).image)
+                                .into(imageView);
 
         txtDelFromCart.setOnClickListener(v -> {
                     loadWantDelete(Data.get(position).id);

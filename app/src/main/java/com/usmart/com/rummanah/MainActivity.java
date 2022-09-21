@@ -171,7 +171,6 @@ public class MainActivity extends Activity {
                     UserMobileHolder.getInstance().setData(UserMobile);
                     UserEmailHolder.getInstance().setData(UserEmail);
                     UserTokenHolder.getInstance().setData(Token);
-                    Log.i("TestApp", UserTokenHolder.getInstance().getData().access_token);
 
                     if (NetWork.isNetworkAvailable(getApplicationContext()) == true) {
                         Intent intent = new Intent(MainActivity.this, Explane2.class);

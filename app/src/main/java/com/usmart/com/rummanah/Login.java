@@ -223,13 +223,13 @@ public class Login extends Activity {
                                     Login = getSharedPreferences(Values.SharedPreferences_FileName, 0);
                                     SharedPreferences.Editor editor = Login.edit();
                                     editor.putString("isLogin", "login");
-                                    editor.putString("UserID", FaceIdHolder.getInstance().getData());
-                                    editor.putString("UserName", UsernameHolder.getInstance().getData());
-                                    editor.putString("UserMobile", UserMobileHolder.getInstance().getData());
-                                    editor.putString("UserEmail", UserEmailHolder.getInstance().getData());
-                                    editor.putString("Token", UserTokenHolder.getInstance().getData().access_token);
-                                    editor.putString("Token_Type", UserTokenHolder.getInstance().getData().token_type);
-                                    editor.putString("Token_Exp", UserTokenHolder.getInstance().getData().expires_in);
+                                    editor.putString("UserID", String.valueOf(LoginData.data.id));
+                                    editor.putString("UserName",LoginData.data.name );
+                                    editor.putString("UserMobile", LoginData.data.phone);
+                                    editor.putString("UserEmail", LoginData.data.email);
+                                    editor.putString("Token", String.valueOf(LoginData.data.token));
+                                    editor.putString("Token_Type","");
+                                    editor.putString("Token_Exp", "");
                                     editor.commit();
 
                                     if (ProdID > 0) {

@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import androidx.activity.OnBackPressedCallback;
 
+import com.bumptech.glide.Glide;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.usmart.com.rummanah.Home;
@@ -83,7 +84,8 @@ public class CustomListMenuAccount extends ArrayAdapter<DataInListIcons> {
             Typeface font = Typeface.createFromAsset(Activity.getAssets(), "fonts/GE_SS_Two_Light.otf");
             txtTitle.setText(Data.get(position).name);
             txtTitle.setTypeface(font);
-            ImageLoader.getInstance().displayImage(Data.get(position).photo, imageView, options);
+            Glide.with(getContext()).load(Data.get(position).photo)
+                            .into(imageView);
         }
         if (position == 5) {
             TextView txtTitle = rowView.findViewById(R.id.Menutitle);

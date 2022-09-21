@@ -14,6 +14,7 @@ import android.widget.RelativeLayout;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.usmart.com.rummanah.Product;
@@ -86,7 +87,8 @@ public class CustomListOffers extends RecyclerView.Adapter<CustomListOffers.View
 
             });
         } else if (Data.get(position).get(0).size == 2) {
-            ImageLoader.getInstance().displayImage(Values.Link_Image + Data.get(position).get(0).image, holder.MarginAd, options);
+            Glide.with(holder.MarginAd.getContext()).load(Values.Link_Image + Data.get(position).get(0).image)
+                            .into(holder.MarginAd);
             holder.FullAd.setVisibility(View.GONE);
             holder.MarginAd.setVisibility(View.VISIBLE);
             holder.SmallAd.setVisibility(View.GONE);

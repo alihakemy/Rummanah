@@ -1,7 +1,13 @@
 package helpers;
 
 public class LoginHolder {
+    private static final LoginHolder holder = new LoginHolder();
+
     private String FaceID;
+
+    public LoginHolder() {
+        FaceID = "";
+    }
 
     public String getData() {
         return FaceID;
@@ -11,9 +17,9 @@ public class LoginHolder {
         this.FaceID = data;
     }
 
-    private static final LoginHolder holder = new LoginHolder();
 
     public static LoginHolder getInstance() {
+
         return holder;
     }
 

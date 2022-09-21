@@ -32,6 +32,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.Indicators.PagerIndicator;
 import com.daimajia.slider.library.SliderLayout;
@@ -202,12 +203,24 @@ public class Home extends Activity {
         Url = Values.Link_service + "home/" + lang + "/v1/";
         Log.i("TestApp", Url);
         client.addHeader("Content-Type", "application/json");
-        if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
-        } else {
+        try {
+            if(LoginHolder.getInstance().getData()!=null){
+                if (LoginHolder.getInstance().getData().equals("login")) {
+                    client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
+                            + " " + UserTokenHolder.getInstance().getData().access_token);
+                } else {
+                    client.addHeader("Authorization", "" + Values.Authorization_User);
+                }
+            }else{
+                client.addHeader("Authorization", "" + Values.Authorization_User);
+
+            }
+        }catch (Exception e){
             client.addHeader("Authorization", "" + Values.Authorization_User);
+
         }
+
+
 
         client.get(Url, new AsyncHttpResponseHandler() {
             @Override
@@ -326,7 +339,10 @@ public class Home extends Activity {
                                         .bitmapConfig(Bitmap.Config.RGB_565)
                                         .displayer(new RoundedBitmapDisplayer(5))
                                         .build();
-                                ImageLoader.getInstance().displayImage(Values.Link_Image + MainSection.data.get(0).image, Ad, options);
+
+                                Glide.with( Ad.getContext())
+                                                .load(Values.Link_Image + MainSection.data.get(0).image
+                                                ).into(Ad);
 
                                 Container.addView(view);
                             }

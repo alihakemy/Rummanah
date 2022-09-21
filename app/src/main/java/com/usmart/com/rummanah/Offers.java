@@ -168,12 +168,18 @@ public class Offers extends Activity {
         Url = Values.Link_service + "offers_android/" + lang + "/v1";
         Log.i("TestApp", Url);
         client.addHeader("Content-Type", "application/json");
-        if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
-        } else {
+        try {
+            if (LoginHolder.getInstance().getData().equals("login")) {
+                client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
+                        + " " + UserTokenHolder.getInstance().getData().access_token);
+            } else {
+                client.addHeader("Authorization", "" + Values.Authorization_User);
+            }
+        }catch (Exception e){
             client.addHeader("Authorization", "" + Values.Authorization_User);
+
         }
+
 
         client.get(Url, new AsyncHttpResponseHandler() {
             @Override
