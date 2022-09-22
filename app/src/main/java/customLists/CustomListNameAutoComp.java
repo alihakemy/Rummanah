@@ -70,20 +70,20 @@ public class CustomListNameAutoComp extends ArrayAdapter<DataInName.MainData> {
         if (customer != 0) {
 
 
-           txtPrice.setText(items.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
-            txtDiscount.setText(items.get(position).price_before_offer + " " + Activity.getResources().getString(R.string.DK));
+           txtPrice.setText(String.format("%.3f",items.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
+            txtDiscount.setText(String.format("%.3f",items.get(position).price_before_offer) + " " + Activity.getResources().getString(R.string.DK));
 
             if (items.get(position).offer == 0) {
                 //   txtDiscount.setVisibility(View.GONE);
-                txtPrice.setText(items.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
+                txtPrice.setText(String.format("%.3f",items.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
                 txtDiscount.setText("");
                 txtDiscountPersent.setVisibility(View.GONE);
 
             } else {
                 txtDiscount.setPaintFlags(txtPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
                 txtDiscount.setVisibility(View.VISIBLE);
-                txtPrice.setText(items.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
-                txtDiscount.setText(items.get(position).price_before_offer + " " + Activity.getResources().getString(R.string.DK));
+                txtPrice.setText(String.format("%.3f",items.get(position).final_price )+ " " + Activity.getResources().getString(R.string.DK));
+                txtDiscount.setText(String.format("%.3f",items.get(position).price_before_offer) + " " + Activity.getResources().getString(R.string.DK));
                 txtDiscountPersent.setVisibility(View.VISIBLE);
 
                 float d = items.get(position).offer_percentage;

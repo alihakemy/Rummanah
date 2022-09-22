@@ -2,6 +2,8 @@ package constants;
 
 import android.provider.Settings;
 
+import java.text.DecimalFormat;
+
 public final class Values {
 	public static final String Link_service = "http://rummanah.com/api/";
 	public static final String Link_page= "http://rummanah.com/webview/";

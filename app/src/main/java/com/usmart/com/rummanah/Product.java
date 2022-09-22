@@ -115,10 +115,8 @@ public class Product extends FragmentActivity {
     };
 
     Locale locale = new Locale("en", "UK");
-    String pattern = "###.###";
     DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
 
-    DecimalFormat decimalFormat = new DecimalFormat(pattern,symbols);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -157,7 +155,6 @@ public class Product extends FragmentActivity {
         lang = getSharedPreferences(Values.SharedPreferences_FileNameLangSelect, 0)
                 .getString(Values.SharedPreferences_FileNameLangSelect, null);
         lang = Values.SharedPreferences_FileNameLangSelect;
-        decimalFormat.applyPattern(pattern);
         ID = getIntent().getExtras().getInt("ID");
         // ******************** Sliding Menu *****************
         fontAvenir = Typeface.createFromAsset(activity.getAssets(), "fonts/avenir-lt-std-55-roman.otf");
@@ -338,14 +335,14 @@ public class Product extends FragmentActivity {
                     Data = g.fromJson(arg1, t);
                     tv_Title.setText(Data.data.product.title);
                     tv_Cat.setText(Data.data.product.category_name + " ");
-                    tv_Price.setText(decimalFormat.format(Data.data.product.final_price) + " ");
+                    tv_Price.setText(String.format("%.3f",Data.data.product.final_price) + " ");
                     tv_averageRating.setText(Data.data.product.rate + " " + getResources().getString(R.string.from) + " 5.0");
                     tv_totalRates.setText(Data.data.product.rate_count + " " + getResources().getString(R.string.rates));
                     rb_rating.setRating((float) Data.data.product.rate);
 
                     if (Data.data.product.offer == 0) {
                         //   txtDiscount.setVisibility(View.GONE);
-                        tv_Price.setText(decimalFormat.format(Data.data.product.final_price) + " ");
+                        tv_Price.setText(String.format("%.3f",Data.data.product.final_price) + " ");
                         tv_BeforePrice.setText("");
                         tv_BeforePrice.setVisibility(View.GONE);
                         tv_BeforePrice_Curr.setVisibility(View.GONE);
@@ -354,8 +351,8 @@ public class Product extends FragmentActivity {
                         tv_BeforePrice.setPaintFlags(tv_Price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
                         tv_BeforePrice.setVisibility(View.VISIBLE);
                         tv_BeforePrice_Curr.setVisibility(View.VISIBLE);
-                        tv_Price.setText(decimalFormat.format(Data.data.product.final_price) + " ");
-                        tv_BeforePrice.setText(decimalFormat.format(Data.data.product.price_before_offer) + " ");
+                        tv_Price.setText(String.format("%.3f",Data.data.product.final_price) + " ");
+                        tv_BeforePrice.setText(String.format("%.3f",Data.data.product.price_before_offer) + " ");
                     }
 
                     int x = Data.data.product.description.length();

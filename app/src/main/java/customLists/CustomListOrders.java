@@ -40,9 +40,7 @@ public class CustomListOrders extends ArrayAdapter<DataInOrders.Orders> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         Locale locale = new Locale("en", "UK");
-        String pattern = "###.###";
-        DecimalFormat decimalFormat = (DecimalFormat) NumberFormat.getNumberInstance(locale);
-        decimalFormat.applyPattern(pattern);
+
 
         LayoutInflater inflater = Activity.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.singel_order_list, null, true);
@@ -83,7 +81,7 @@ public class CustomListOrders extends ArrayAdapter<DataInOrders.Orders> {
         tv_Date.setText(Data.get(position).date + "");
         tv_OrderSys.setText(Data.get(position).order_number + "");
         tv_Count.setText(Data.get(position).count + "");
-        tv_Price.setText(decimalFormat.format(Data.get(position).total_price) + "");
+        tv_Price.setText(String.format("%.3f",Data.get(position).total_price) + "");
 
         if (Data.get(position).status == 1) {
             tv_Status.setText(R.string.OrderCurrent);

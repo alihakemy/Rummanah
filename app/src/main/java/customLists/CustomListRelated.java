@@ -76,21 +76,21 @@ public class CustomListRelated extends RecyclerView.Adapter<CustomListRelated.Vi
     public void onBindViewHolder(ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
 
-        holder.txtPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
-        holder.txtDiscount.setText(Data.get(position).price_before_offer + " " + Activity.getResources().getString(R.string.DK));
+        holder.txtPrice.setText(String.format("%.3f",Data.get(position).final_price )+ " " + Activity.getResources().getString(R.string.DK));
+        holder.txtDiscount.setText(String.format("%.3f",Data.get(position).price_before_offer )+ " " + Activity.getResources().getString(R.string.DK));
         holder.tv_Cat.setText(Data.get(position).category_name + " ");
         holder.tv_rate.setText("(" + Data.get(position).rate + ")");
 
         if (Data.get(position).offer == 0) {
             //   txtDiscount.setVisibility(View.GONE);
-            holder.txtPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
+            holder.txtPrice.setText(String.format("%.3f",Data.get(position).final_price )+ " " + Activity.getResources().getString(R.string.DK));
             holder.txtDiscount.setText("");
             holder.txtDiscountPersent.setVisibility(View.GONE);
 
         } else {
             holder.txtDiscount.setPaintFlags(holder.txtPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             holder.txtDiscount.setVisibility(View.VISIBLE);
-            holder.txtPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
+            holder.txtPrice.setText(String.format("%.3f",Data.get(position).final_price )+ " " + Activity.getResources().getString(R.string.DK));
             holder.txtDiscountPersent.setVisibility(View.VISIBLE);
 
             float d = Data.get(position).offer_percentage;

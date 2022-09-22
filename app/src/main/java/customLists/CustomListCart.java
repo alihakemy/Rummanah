@@ -99,15 +99,15 @@ public class CustomListCart extends ArrayAdapter<DataInCart.Carts> {
         txtAmount.setText(Data.get(position).count + "");
 
         if (Data.get(position).price_before_offer == 0) {
-            txtMainPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
+            txtMainPrice.setText(String.format("%.3f", Data.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
             txtBeforePrice.setText("");
             txtBeforePrice.setVisibility(View.GONE);
 
         } else {
             txtBeforePrice.setPaintFlags(txtMainPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             txtBeforePrice.setVisibility(View.VISIBLE);
-            txtMainPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
-            txtBeforePrice.setText(Data.get(position).price_before_offer + " " + Activity.getResources().getString(R.string.DK));
+            txtMainPrice.setText(String.format("%.3f",Data.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
+            txtBeforePrice.setText(String.format("%.3f",Data.get(position).price_before_offer) + " " + Activity.getResources().getString(R.string.DK));
             txtBeforePrice.setVisibility(View.VISIBLE);
         }
 

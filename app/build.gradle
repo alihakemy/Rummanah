@@ -6,8 +6,8 @@ android {
         applicationId "com.usmart.com.rummanah"
         minSdkVersion 23
         targetSdkVersion 32
-        versionCode 9
-        versionName "1.0.3"
+        versionCode 10
+        versionName "1.0.4"
         //multiDexEnabled true
         //useLibrary 'org.apache.http.legacy'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

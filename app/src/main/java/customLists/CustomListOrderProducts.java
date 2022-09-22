@@ -77,9 +77,6 @@ public class CustomListOrderProducts extends ArrayAdapter<DataInProduct.Product>
     public View getView(int position, View convertView, ViewGroup parent) {
 
         Locale locale = new Locale("en", "UK");
-        String pattern = "###.###";
-        DecimalFormat decimalFormat = (DecimalFormat) NumberFormat.getNumberInstance(locale);
-        decimalFormat.applyPattern(pattern);
 
         LayoutInflater inflater = Activity.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.singel_order_product_list, null, true);
@@ -105,7 +102,7 @@ public class CustomListOrderProducts extends ArrayAdapter<DataInProduct.Product>
 
         tv_Title.setText(Data.get(position).title + "");
         tv_Count.setText(Data.get(position).count + "");
-        tv_Price.setText(decimalFormat.format(Data.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
+        tv_Price.setText(String.format("%.3f",Data.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
 
         options = new DisplayImageOptions.Builder()
                 .showImageOnLoading(R.mipmap.def_icon)

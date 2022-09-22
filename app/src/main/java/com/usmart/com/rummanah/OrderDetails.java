@@ -63,8 +63,6 @@ public class OrderDetails extends Activity {
     public String lang;
 
     Locale locale = new Locale("en", "UK");
-    String pattern = "###.###";
-    DecimalFormat decimalFormat = (DecimalFormat) NumberFormat.getNumberInstance(locale);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,7 +104,6 @@ public class OrderDetails extends Activity {
         prog = findViewById(R.id.progressBar1);
 
         MainTitle = findViewById(R.id.MainTitle);
-        decimalFormat.applyPattern(pattern);
         lv = findViewById(R.id.lvItems);
         lv.setExpanded(true);
 
@@ -204,9 +201,9 @@ public class OrderDetails extends Activity {
                     tv_Count.setText(_Data.data.products.size() + "");
                     tv_Address.setText(_Data.data.address.street + " " + _Data.data.address.building + " " +
                             _Data.data.address.gaddah);
-                    tv_TotalOrders.setText(decimalFormat.format(_Data.data.subtotal_price) + "");
-                    tv_TotalDelivery.setText(decimalFormat.format(_Data.data.delivery_cost) + "");
-                    tv_Total.setText(decimalFormat.format(_Data.data.total_price) + "");
+                    tv_TotalOrders.setText(String.format("%.3f",_Data.data.subtotal_price) + "");
+                    tv_TotalDelivery.setText(String.format("%.3f",_Data.data.delivery_cost) + "");
+                    tv_Total.setText(String.format("%.3f",_Data.data.total_price) + "");
 
                     if (_Data.data.status == 1) {
                         tvStatus.setText(R.string.OrderCurrent);

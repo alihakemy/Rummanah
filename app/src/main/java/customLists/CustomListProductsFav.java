@@ -97,20 +97,20 @@ public class CustomListProductsFav extends ArrayAdapter<DataInProductsFav.Produc
         tv_Cat.setTypeface(fontLight);
         txtDiscountPersent.setTypeface(fontAvenir);
 
-        txtPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
-        txtDiscount.setText(Data.get(position).price_before_offer + " " + Activity.getResources().getString(R.string.DK));
+        txtPrice.setText(String.format("%.3f",Data.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
+        txtDiscount.setText(String.format("%.3f",Data.get(position).price_before_offer )+ " " + Activity.getResources().getString(R.string.DK));
         tv_Cat.setText(Data.get(position).category_name + " ");
 
         if (Data.get(position).offer == 0) {
             //   txtDiscount.setVisibility(View.GONE);
-            txtPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
+            txtPrice.setText(String.format("%.3f",Data.get(position).final_price )+ " " + Activity.getResources().getString(R.string.DK));
             txtDiscount.setText("");
             txtDiscountPersent.setVisibility(View.GONE);
 
         } else {
             txtDiscount.setPaintFlags(txtPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             txtDiscount.setVisibility(View.VISIBLE);
-            txtPrice.setText(Data.get(position).final_price + " " + Activity.getResources().getString(R.string.DK));
+            txtPrice.setText(String.format("%.3f",Data.get(position).final_price) + " " + Activity.getResources().getString(R.string.DK));
             txtDiscountPersent.setVisibility(View.VISIBLE);
 
             float d = Data.get(position).offer_percentage;
