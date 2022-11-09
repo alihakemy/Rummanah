@@ -7,9 +7,7 @@
         android:id="@+id/Splach"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:scaleType="fitXY"
-        android:src="@mipmap/app_icon" />
+        android:layout_centerInParent="true"
+        android:src="@drawable/logooo" />
 
 </RelativeLayout>

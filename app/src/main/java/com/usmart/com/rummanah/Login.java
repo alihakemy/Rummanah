@@ -153,10 +153,12 @@ public class Login extends Activity {
                 /*Intent i = new Intent(activity, AddAddress.class);
                 i.putExtra("ProdID", ProdID);
                 startActivity(i);*/
-                Intent i = new Intent(activity, AddAddress.class);
-                i.putExtra("ProdID", ProdID);
-                i.putExtra("RequestCode", 12);
-                startActivity(i);
+//                Intent i = new Intent(activity, AddAddress.class);
+//                i.putExtra("ProdID", ProdID);
+//                i.putExtra("RequestCode", 12);
+//                startActivity(i);
+
+                onBackPressed();
             }
         });
 
