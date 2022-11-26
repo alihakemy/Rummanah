@@ -331,7 +331,10 @@ public class OrderDetails extends Activity {
 
 
     public void gotoBack(View v) {
-        onBackPressed();
+
+        startActivity(new Intent(activity , Home.class));
+
+
     }
 
 

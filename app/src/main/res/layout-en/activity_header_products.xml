@@ -12,6 +12,7 @@
         android:id="@+id/CancelAll"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:rotation="180"
         android:layout_alignParentLeft="true"
         android:layout_gravity="center"
         android:contentDescription="@string/app_name"

@@ -123,6 +123,7 @@ public class Brands extends Activity {
         setupSearchView();
         loadBrands();
 
+
     }
 
     private void setupSearchView() {

@@ -18,7 +18,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ethanhua.skeleton.ViewSkeletonScreen;
@@ -75,7 +77,8 @@ public class ProductsOffers extends Activity {
     String Title;
     String lang;
     int SecID;
-
+    private LinearLayout ll_profile, ll_offers, ll_home, ll_categories;
+    private RelativeLayout rl_basket;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
@@ -142,6 +145,52 @@ public class ProductsOffers extends Activity {
 
         loadProducts();
         CartCount();
+
+        ll_profile = findViewById(R.id.ll_profile);
+        rl_basket = findViewById(R.id.rl_basket);
+        ll_offers = findViewById(R.id.ll_offers);
+        ll_categories = findViewById(R.id.ll_categories);
+        ll_home = findViewById(R.id.ll_home);
+        ll_categories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductsOffers.this, AllCats.class);
+                startActivity(intent);
+            }
+        });
+
+        ll_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductsOffers.this, AccountMenu.class);
+                startActivity(intent);
+            }
+        });
+
+        ll_offers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductsOffers.this, Offers.class);
+                startActivity(intent);
+            }
+        });
+
+        rl_basket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductsOffers.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+        ll_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductsOffers.this, Home.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
