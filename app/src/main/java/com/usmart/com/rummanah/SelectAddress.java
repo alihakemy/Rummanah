@@ -160,8 +160,7 @@ public class SelectAddress extends Activity {
 
         try {
             if (LoginHolder.getInstance().getData().equals("login")) {
-                client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                        + " " + UserTokenHolder.getInstance().getData().access_token);
+                client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
             } else {
                 client.addHeader("Authorization", "" + Values.Authorization_User);
             }
@@ -237,8 +236,7 @@ public class SelectAddress extends Activity {
         );
         String Auth;
         if (LoginHolder.getInstance().getData().equals("login")) {
-            Auth = UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token;
+            Auth = UserTokenHolder.getInstance().getData().access_token;
         } else {
             Auth = Values.Authorization_User;
         }
@@ -305,8 +303,7 @@ public class SelectAddress extends Activity {
         Request request = new Request.Builder()
                 .url(Url)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                        + " " + UserTokenHolder.getInstance().getData().access_token)
+                .addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token)
                 .delete(body)
                 .build();
         client.newCall(request).enqueue(new Callback() {

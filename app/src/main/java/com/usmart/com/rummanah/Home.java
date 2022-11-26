@@ -206,8 +206,7 @@ public class Home extends Activity {
         try {
             if(LoginHolder.getInstance().getData()!=null){
                 if (LoginHolder.getInstance().getData().equals("login")) {
-                    client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                            + " " + UserTokenHolder.getInstance().getData().access_token);
+                    client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
                 } else {
                     client.addHeader("Authorization", "" + Values.Authorization_User);
                 }

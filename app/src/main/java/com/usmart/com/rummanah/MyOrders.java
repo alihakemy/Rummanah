@@ -188,8 +188,7 @@ public class MyOrders extends Activity {
         Url = Values.Link_service + "orders/" + lang + "/v1";
 
         if(UserTokenHolder.getInstance().getData()!=null){
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
+            client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
 
         }
 

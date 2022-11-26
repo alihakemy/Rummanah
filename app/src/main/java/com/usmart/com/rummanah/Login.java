@@ -228,8 +228,8 @@ public class Login extends Activity {
                                     editor.putString("UserName",LoginData.data.name );
                                     editor.putString("UserMobile", LoginData.data.phone);
                                     editor.putString("UserEmail", LoginData.data.email);
-                                    editor.putString("Token", String.valueOf(LoginData.data.token));
-                                    editor.putString("Token_Type","");
+                                    editor.putString("Token", String.valueOf(LoginData.data.token.access_token.toString()));
+                                    editor.putString("Token_Type", String.valueOf(LoginData.data.token.token_type.toString()));
                                     editor.putString("Token_Exp", "");
                                     editor.commit();
 

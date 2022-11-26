@@ -282,8 +282,7 @@ public class Checkout extends Activity {
         );
         String Auth;
         if (LoginHolder.getInstance().getData().equals("login")) {
-            Auth = UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token;
+            Auth =  UserTokenHolder.getInstance().getData().access_token;
         } else {
             Auth = Values.Authorization_User;
         }
@@ -405,8 +404,7 @@ public class Checkout extends Activity {
 
         String Auth;
         if (LoginHolder.getInstance().getData().equals("login")) {
-            Auth = UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token;
+            Auth =  UserTokenHolder.getInstance().getData().access_token;
         } else {
             Auth = Values.Authorization_User;
         }
@@ -502,8 +500,7 @@ public class Checkout extends Activity {
 
         String Auth;
         if (LoginHolder.getInstance().getData().equals("login")) {
-            Auth = UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token;
+            Auth =  UserTokenHolder.getInstance().getData().access_token;
         } else {
             Auth = Values.Authorization_User;
         }
@@ -584,8 +581,7 @@ public class Checkout extends Activity {
 
         String Auth;
         if (LoginHolder.getInstance().getData().equals("login")) {
-            Auth = UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token;
+            Auth = UserTokenHolder.getInstance().getData().access_token;
         } else {
             Auth = Values.Authorization_User;
         }

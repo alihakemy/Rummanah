@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 import constants.Values;
 
+import helpers.MyApp;
+
 public class DataInLogin implements Serializable {
 
 
@@ -54,14 +56,21 @@ public class DataInLogin implements Serializable {
     }
 
     public static class Tokens {
+        SharedPreferences login = MyApp.context.getSharedPreferences(Values.SharedPreferences_FileName, 0);
+
         public Tokens() {
-            access_token = "";
+
+            access_token =login.getString("Token","12");
             token_type = "";
             expires_in = "";
         }
 
-        public String access_token = "";
+        public String access_token = "bearer "+ login.getString("Token","12");
         public String token_type = "";
         public String expires_in ="";
     }
+
+
 }
+
+

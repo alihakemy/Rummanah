@@ -248,8 +248,7 @@ public class AddAddress extends FragmentActivity {
             String Auth, json;
             if (LoginHolder.getInstance().getData().equals("login")) {
                 try {
-                    Auth = UserTokenHolder.getInstance().getData().token_type
-                            + " " + UserTokenHolder.getInstance().getData().access_token;
+                    Auth = UserTokenHolder.getInstance().getData().access_token;
                 }catch (Exception  e){
                     Auth = "";
                 }
@@ -362,8 +361,7 @@ public class AddAddress extends FragmentActivity {
         );
         String Auth;
         if (LoginHolder.getInstance().getData().equals("login")) {
-            Auth = UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token;
+            Auth =  UserTokenHolder.getInstance().getData().access_token;
         } else {
             Auth = Values.Authorization_User;
         }

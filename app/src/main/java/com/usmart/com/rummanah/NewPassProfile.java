@@ -117,8 +117,7 @@ public class NewPassProfile extends Activity {
             Request request = new Request.Builder()
                     .url(Url)
                     .addHeader("Content-Type", "application/json")
-                    .addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                            + " " + UserTokenHolder.getInstance().getData().access_token)
+                    .addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token)
                     .put(body)
                     .build();
             client.newCall(request).enqueue(new Callback() {

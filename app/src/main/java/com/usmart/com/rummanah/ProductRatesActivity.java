@@ -190,8 +190,7 @@ public class ProductRatesActivity extends FragmentActivity {
         Url = Values.Link_service + "products/rates/" + ID + "/" + lang + "/v1";
         client.addHeader("Content-Type", "application/json");
         if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
+            client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
         } else {
             client.addHeader("Authorization", "" + Values.Authorization_User);
         }
@@ -267,8 +266,7 @@ public class ProductRatesActivity extends FragmentActivity {
         Url = Values.Link_service + "products/rates/" + ID + "/" + lang + "/v1?page=" + page;
         client.addHeader("Content-Type", "application/json");
         if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
+            client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
         } else {
             client.addHeader("Authorization", "" + Values.Authorization_User);
         }

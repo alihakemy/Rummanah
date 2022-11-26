@@ -304,7 +304,7 @@ public class CustomListProducts extends ArrayAdapter<DataInProducts.ProductDetai
             return;
         }
         OkHttpClient client = new OkHttpClient();
-        String Url = Values.Link_service + "favorites/" + LangHolder.getInstance().getData() + "/v1";
+        String Url = "https://rummanah.com/api/favorites/en/v1";
         String json = new StringBuilder()
                 .append("{")
                 .append("\"product_id\":\"" + ID + "\"")
@@ -317,8 +317,7 @@ public class CustomListProducts extends ArrayAdapter<DataInProducts.ProductDetai
         Request request = new Request.Builder()
                 .url(Url)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                        + " " + UserTokenHolder.getInstance().getData().access_token)
+                .addHeader("Authorization",UserTokenHolder.getInstance().getData().access_token)
                 .post(body)
                 .build();
         client.newCall(request).enqueue(new Callback() {
@@ -367,7 +366,7 @@ public class CustomListProducts extends ArrayAdapter<DataInProducts.ProductDetai
             return;
         }
         OkHttpClient client = new OkHttpClient();
-        String Url = Values.Link_service + "favorites/" + LangHolder.getInstance().getData() + "/v1";
+        String Url = "https://rummanah.com/api/favorites/en/v1";
         String json = new StringBuilder()
                 .append("{")
                 .append("\"product_id\":\"" + ID + "\"")
@@ -380,8 +379,7 @@ public class CustomListProducts extends ArrayAdapter<DataInProducts.ProductDetai
         Request request = new Request.Builder()
                 .url(Url)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                        + " " + UserTokenHolder.getInstance().getData().access_token)
+                .addHeader("Authorization",UserTokenHolder.getInstance().getData().access_token)
                 .delete(body)
                 .build();
         client.newCall(request).enqueue(new Callback() {

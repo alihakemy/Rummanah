@@ -282,8 +282,7 @@ public class CustomListOrderProducts extends ArrayAdapter<DataInProduct.Product>
                             .url(Url)
                             .addHeader("Content-Type", "application/json")
                             //.addHeader("Authorization", "" + Values.Authorization_User)
-                            .addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                                    + " " + UserTokenHolder.getInstance().getData().access_token)
+                            .addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token)
                             .post(body)
                             .build();
                     client.newCall(request).enqueue(new Callback() {
@@ -344,8 +343,7 @@ public class CustomListOrderProducts extends ArrayAdapter<DataInProduct.Product>
                 .url(Url)
                 .addHeader("Content-Type", "application/json")
                 //.addHeader("Authorization", "" + Values.Authorization_User)
-                .addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                        + " " + UserTokenHolder.getInstance().getData().access_token)
+                .addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token)
                 .post(body)
                 .build();
         client.newCall(request).enqueue(new Callback() {

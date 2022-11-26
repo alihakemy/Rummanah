@@ -152,8 +152,7 @@ public class ProductsOffers extends Activity {
         Url = Values.Link_service + "famous_offers/" + SecID + "/" + lang + "/v1";
         Log.i("TestApp", Url);
         if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
+            client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
         } else {
             client.addHeader("Authorization", "" + Values.Authorization_User);
         }

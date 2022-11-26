@@ -165,8 +165,7 @@ public class ProductsBrand extends Activity {
         Url = Values.Link_service + "products/brand/" + BrandID + "/" + lang + "/v1";
 
         if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
+            client.addHeader("Authorization", UserTokenHolder.getInstance().getData().access_token);
         } else {
             client.addHeader("Authorization", "" + Values.Authorization_User);
         }

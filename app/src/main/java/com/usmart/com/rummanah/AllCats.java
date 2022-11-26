@@ -268,8 +268,7 @@ public class AllCats extends Activity {
         client.addHeader("Content-Type", "application/json");
         try {
             if (LoginHolder.getInstance().getData().equals("login")) {
-                client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                        + " " + UserTokenHolder.getInstance().getData().access_token);
+                client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
             } else {
                 client.addHeader("Authorization", "" + Values.Authorization_User);
             }
@@ -338,8 +337,7 @@ public class AllCats extends Activity {
         Log.i("TestApp", Url);
         client.addHeader("Content-Type", "application/json");
         if (LoginHolder.getInstance().getData().equals("login")) {
-            client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                    + " " + UserTokenHolder.getInstance().getData().access_token);
+            client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
         } else {
             client.addHeader("Authorization", "" + Values.Authorization_User);
         }

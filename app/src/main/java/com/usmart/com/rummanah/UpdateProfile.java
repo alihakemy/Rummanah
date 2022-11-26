@@ -200,8 +200,7 @@ public class UpdateProfile extends Activity {
 
         Url = Values.Link_service + "user/profile/" + lang + "/v1";
         client.addHeader("Content-Type", "application/json");
-        client.addHeader("Authorization", "" + UserTokenHolder.getInstance().getData().token_type
-                + " " + UserTokenHolder.getInstance().getData().access_token);
+        client.addHeader("Authorization",  UserTokenHolder.getInstance().getData().access_token);
         client.get(Url, new AsyncHttpResponseHandler() {
             @Override
             public void onStart() {
