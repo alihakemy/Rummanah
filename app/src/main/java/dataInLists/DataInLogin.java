@@ -34,7 +34,7 @@ public class DataInLogin implements Serializable {
         datas.name= login.getString("UserName","" );
         datas.phone= login.getString("UserMobile", "");
         datas.email= login.getString("UserEmail", "");
-        datas.token.access_token=   login.getString("Token","12");
+        datas.token.access_token=  "bearer "+  login.getString("Token","12");
         datas.token.token_type=login.getString("Token_Type","");
         login.getString("Token_Exp", "");
     }
@@ -60,7 +60,7 @@ public class DataInLogin implements Serializable {
 
         public Tokens() {
 
-            access_token =login.getString("Token","12");
+            access_token = "bearer "+ login.getString("Token","12");
             token_type = "";
             expires_in = "";
         }
