@@ -5,24 +5,36 @@
       <map>
         <entry key="..\:/Android Projects/Matgr/app/src/main/res/layout/activity_product.xml" value="0.7212301587301587" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/drawable/btn_blue_radius20.xml" value="0.113" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/activity_finish.xml" value="0.16770833333333332" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/activity_header_product.xml" value="0.16770833333333332" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/activity_login.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/activity_offers.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/activity_splach.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/layout_brands.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/singel_product_list.xml" value="0.5" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw360dp/activity_finish.xml" value="0.2515625" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw360dp/activity_header_product.xml" value="0.2515625" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw360dp/activity_splach.xml" value="0.2515625" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw360dp/singel_product_list.xml" value="0.7333333333333334" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw410dp/activity_finish.xml" value="0.16770833333333332" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw410dp/activity_header_product.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw410dp/activity_splach.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw410dp/layout_offers.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw410dp/singel_product_list.xml" value="0.4466666666666667" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_add_address.xml" value="0.22" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_allcats.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_explan2.xml" value="0.4025" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_finish.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_gridview_products.xml" value="0.4025" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_header2.xml" value="0.16770833333333332" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_header_product.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_home.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_listview.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_listview_orders.xml" value="0.4025" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_map_filter.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_menu.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_photo.xml" value="0.4025" />
-        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_product.xml" value="0.4466666666666667" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_product.xml" value="0.3333333333333333" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/activity_splach.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/bottom_navigation.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/drawer_list_item.xml" value="0.4025" />

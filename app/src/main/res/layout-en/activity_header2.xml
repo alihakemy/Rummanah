@@ -16,6 +16,7 @@
         android:contentDescription="@string/app_name"
         android:onClick="gotoBack"
         android:padding="10dp"
+        android:rotation="180"
         android:src="@mipmap/arrow_w" />
 
 
