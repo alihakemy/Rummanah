@@ -18,7 +18,8 @@
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/layout_brands.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/layout_cats.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/layout_offers.xml" value="0.16770833333333332" />
-        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/singel_product_list.xml" value="0.5" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/singel_product_list.xml" value="0.22" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-en/singel_product_list2.xml" value="0.3333333333333333" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw360dp/activity_finish.xml" value="0.2515625" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw360dp/activity_header_product.xml" value="0.2515625" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout-sw360dp/activity_splach.xml" value="0.2515625" />
@@ -67,7 +68,8 @@
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/singel_cats_home_list.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/singel_offer_list.xml" value="0.4025" />
         <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/singel_product_list.xml" value="0.16666666666666666" />
-        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/singel_product_list2.xml" value="0.16770833333333332" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/singel_product_list2.xml" value="0.3333333333333333" />
+        <entry key="..\:/FreeLance/Rummanah/app/src/main/res/layout/singel_product_list3.xml" value="0.16770833333333332" />
         <entry key="..\:/FreeLance/matgar-android-main/app/src/main/res/layout/activity_product.xml" value="0.4025" />
         <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout-en/activity_header_checkout.xml" value="0.25" />
         <entry key="..\:/Users/Abdelrahman Hesham/Desktop/matgar-android-main/app/src/main/res/layout-sw360dp/activity_cart.xml" value="0.375" />

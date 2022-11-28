@@ -26,7 +26,8 @@
             android:scaleType="centerCrop"
             android:src="@mipmap/def" />
 
-        <RelativeLayout
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/iv_Feeds"
@@ -183,7 +184,7 @@
                 android:textColor="@color/white"
                 android:textSize="16dp" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </RelativeLayout>
 
