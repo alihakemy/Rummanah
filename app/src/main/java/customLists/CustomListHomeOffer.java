@@ -130,14 +130,7 @@ public class CustomListHomeOffer extends RecyclerView.Adapter<CustomListHomeOffe
             }
         });
 
-        holder.img_Cart.setOnClickListener(view -> {
-            AddCart(Data.get(position).id);
 
-        });
-
-        holder.tv_addToCart.setOnClickListener(view -> {
-            AddCart(Data.get(position).id);
-        });
 
 
         options = new DisplayImageOptions.Builder()
@@ -151,7 +144,7 @@ public class CustomListHomeOffer extends RecyclerView.Adapter<CustomListHomeOffe
                 .build();
         Glide.with(holder.imageView.getContext())
                         .load(Values.Link_Image + Data.get(position).image) .into(holder.imageView);
-        holder.List.setOnClickListener(v -> {
+       holder.imageView.setOnClickListener(v -> {
             Intent i = new Intent(Activity, Product.class);
             i.putExtra("ID", Data.get(position).id);
             Activity.startActivity(i);
@@ -165,6 +158,14 @@ public class CustomListHomeOffer extends RecyclerView.Adapter<CustomListHomeOffe
                 counter = counter + 1;
                 holder.tv_count.setText(String.valueOf(counter));
             }
+        });
+        holder.img_Cart.setOnClickListener(view -> {
+            AddCart(Data.get(position).id);
+
+        });
+
+        holder.tv_addToCart.setOnClickListener(view -> {
+            AddCart(Data.get(position).id);
         });
 
         holder.iv_minus.setOnClickListener(new View.OnClickListener() {

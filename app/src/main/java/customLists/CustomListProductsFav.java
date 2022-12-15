@@ -155,7 +155,7 @@ public class CustomListProductsFav extends ArrayAdapter<DataInProductsFav.Produc
                 .build();
         ImageLoader.getInstance().displayImage(Values.Link_Image + Data.get(position).image, imageView, options);
 
-        List.setOnClickListener(v -> {
+        imageView.setOnClickListener(v -> {
             Intent i = new Intent(Activity, Product.class);
             i.putExtra("ID", Data.get(position).id);
             Activity.startActivity(i);

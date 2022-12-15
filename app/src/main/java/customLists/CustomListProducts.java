@@ -170,7 +170,7 @@ public class CustomListProducts extends ArrayAdapter<DataInProducts.ProductDetai
                 .build();
         ImageLoader.getInstance().displayImage(Values.Link_Image + Data.get(position).image, imageView, options);
 
-        List.setOnClickListener(v -> {
+        imageView.setOnClickListener(v -> {
             Intent i = new Intent(Activity, Product.class);
             i.putExtra("ID", Data.get(position).id);
             Activity.startActivity(i);
@@ -538,7 +538,6 @@ public class CustomListProducts extends ArrayAdapter<DataInProducts.ProductDetai
 
         Yes.setOnClickListener(v -> {
             dialog.dismiss();
-            ((Products) Activity).CartCount();
         });
         dialog.show();
     }

@@ -162,6 +162,13 @@ public class Login extends Activity {
         });
 
 
+        findViewById(R.id.imageView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                onBackPressed();
+            }
+        });
         btn_Login.setOnClickListener(v -> {
             if (Mobile.getText().toString().matches("")) {
                 loadMsg(getResources().getString(R.string.EmptyField));

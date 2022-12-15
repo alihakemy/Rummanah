@@ -131,7 +131,7 @@ public class CustomListRelated extends RecyclerView.Adapter<CustomListRelated.Vi
                 .build();
         ImageLoader.getInstance().displayImage(Values.Link_Image + Data.get(position).image, holder.imageView, options);
 
-        holder.List.setOnClickListener(v -> {
+        holder.imageView.setOnClickListener(v -> {
             Intent i = new Intent(Activity, Product.class);
             i.putExtra("ID", Data.get(position).id);
             Activity.startActivity(i);

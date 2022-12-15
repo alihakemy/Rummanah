@@ -19,20 +19,9 @@ public class DataInProdOffers implements Serializable {
     public boolean success;
     public int code;
     public String message;
-    public ArrayList<OfferContent> data;
+    public ArrayList<DataInProducts.ProductDetails> data;
 
 
-    public class OfferContent {
-        public int id;
-        public String title;
-        public String image;
-        public float final_price;
-        public float price_before_offer;
-        public byte offer;
-        public float offer_percentage;
-        public int category_id;
-        public boolean favorite;
-        public String  category_name;
-    }
+
 
 }

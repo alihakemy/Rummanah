@@ -38,7 +38,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import constants.Values;
-import customLists.CustomListProductsOffers;
+import customLists.CustomListProducts;
 import dataInLists.DataInGlobal;
 import dataInLists.DataInLogin;
 import dataInLists.DataInProdOffers;
@@ -67,7 +67,7 @@ public class ProductsOffers extends Activity {
     DataInProdOffers _Data = new DataInProdOffers();
 
     GridView lv;
-    CustomListProductsOffers adapter2;
+    CustomListProducts adapter2;
     Typeface fontMedim, fontLight, fontUltra, fontPoppinsMed;
     TextView MainTitle, tv_basketCount;
     ViewSkeletonScreen skeletonScreen;
@@ -124,7 +124,7 @@ public class ProductsOffers extends Activity {
         MainTitle = findViewById(R.id.MainTitle);
         lv = findViewById(R.id.listViewOrders);
 
-        adapter2 = new CustomListProductsOffers(activity, new ArrayList<>());
+        adapter2 = new CustomListProducts(activity, new ArrayList<>());
         lv.setAdapter(adapter2);
 
         MainTitle = findViewById(R.id.MainTitle);
@@ -137,11 +137,7 @@ public class ProductsOffers extends Activity {
         MainTap.setVisibility(View.GONE);
         SubTab.setVisibility(View.GONE);
 
-        lv.setOnItemClickListener((parent, view, position, id) -> {
-            Intent i = new Intent(activity, Product.class);
-            i.putExtra("ID", _Data.data.get(position).id);
-            startActivity(i);
-        });
+
 
         loadProducts();
         CartCount();
