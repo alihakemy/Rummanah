@@ -217,10 +217,12 @@ public class Activation extends Activity {
 
         CodeX = getRandomNumberString();
 
-        Url = "https://smsbox.com/smsgateway/services/messaging.asmx/Http_SendSMS?username=Rummanah" +
-                "&password=Rummanahkw@1020&customerid=2954&sendertext=KW-INFO" +
-                "&messagebody=Code%20Is%20:" + CodeX + "&recipientnumbers=" + number +
-                "&defdate=&isblink=false&isflash=false";
+        Url="https://www.smsbox.com/SMSGateway/Services/Messaging.asmx/Http_SendSMS?username=Rummanah" +
+                "&password=KH.Rummana@2816&customerid=2954&sendertext=Rummanah" +
+                "&messageBody=Code%20Is%20:" + CodeX +
+                "recipientNumbers="+ number +"&defdate=&isBlink=false&isFlash=false";
+
+
 
         Log.i("TestApp", Url);
         Log.d("TAG", "Send Message Url: " + Url);

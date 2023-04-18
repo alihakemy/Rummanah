@@ -1,77 +1,49 @@
 {
   "project_info": {
-    "project_number": "641261637484",
-    "firebase_url": "https://ecommerce-547f1.firebaseio.com",
-    "project_id": "ecommerce-547f1",
-    "storage_bucket": "ecommerce-547f1.appspot.com"
+    "project_number": "446354600428",
+    "project_id": "rummana-32654",
+    "storage_bucket": "rummana-32654.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:641261637484:android:e3dd9ff0f2e8bc2f286d49",
-        "android_client_info": {
-          "package_name": "com.usmart.com.mtgr"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "641261637484-1rrspcumc68329h5fpfgherbhffqrbrr.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDRyp9EfuX3vn71kc2OnI7cWkPN05MKIMs"
-        },
-        {
-          "current_key": "AIzaSyAEDL8IDyXQa8Ty3LFpNMnwXSWGIgDU-1I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "641261637484-1rrspcumc68329h5fpfgherbhffqrbrr.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:641261637484:android:3de233e86a1d4195286d49",
+        "mobilesdk_app_id": "1:446354600428:android:28ff3e2241728639d110c9",
         "android_client_info": {
           "package_name": "com.usmart.com.rummanah"
         }
       },
       "oauth_client": [
         {
-          "client_id": "641261637484-fa5es6nvjbc1qs6a7vihsopro9kbcmkg.apps.googleusercontent.com",
+          "client_id": "446354600428-a9itq0o51v1of1osvnv57f7i5dhvf06t.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.usmart.com.rummanah",
-            "certificate_hash": "c46962ac51eb5c84ef76477d43e2020dbd6c44e1"
+            "certificate_hash": "41b253bfe6765a9b0c8fbdab5dbe08b6ed05ad06"
           }
         },
         {
-          "client_id": "641261637484-1rrspcumc68329h5fpfgherbhffqrbrr.apps.googleusercontent.com",
+          "client_id": "446354600428-glbgsac74fq8t4poi1m6mok0o2s3ibj2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usmart.com.rummanah",
+            "certificate_hash": "940d7aa4281ad568cf9c54719de39e280af1fca0"
+          }
+        },
+        {
+          "client_id": "446354600428-abq5o55ssij74usfpem7idsp1iin062b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDRyp9EfuX3vn71kc2OnI7cWkPN05MKIMs"
-        },
-        {
-          "current_key": "AIzaSyAEDL8IDyXQa8Ty3LFpNMnwXSWGIgDU-1I"
+          "current_key": "AIzaSyBDCIWKB62qs9kyiF9bW42m8KjOmuzneuo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "641261637484-1rrspcumc68329h5fpfgherbhffqrbrr.apps.googleusercontent.com",
+              "client_id": "446354600428-abq5o55ssij74usfpem7idsp1iin062b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

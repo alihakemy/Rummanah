@@ -467,17 +467,22 @@ public class Home extends Activity {
 
 
                     runOnUiThread(() -> {
-                        if (!Result.success) {
-                            if (Result.code == 401) {
-                                Intent i = new Intent(activity, Login.class);
-                                startActivity(i);
+                        try {
+                            if (!Result.success) {
+                                if (Result.code == 401) {
+                                    Intent i = new Intent(activity, Login.class);
+                                    startActivity(i);
+                                } else {
+                                    loadMsg(Result.message);
+                                }
                             } else {
-                                loadMsg(Result.message);
+                                tv_CartNum.setText(Result.data.count + "");
+                                tv_basketCount.setText(Result.data.count + "");
                             }
-                        } else {
-                            tv_CartNum.setText(Result.data.count + "");
-                            tv_basketCount.setText(Result.data.count + "");
+                        }catch (Exception e){
+
                         }
+
                     });
 
                 } catch (Exception e) {

@@ -65,11 +65,24 @@ public class MainActivity extends Activity {
                 .getString(Values.SharedPreferences_FileName, null);
         Log.d(TAG, "Value of selected language in splash: " + lang);
         //lang = Values.SharedPreferences_FileNameLangSelect;
-
+        FirebaseMessaging.getInstance().subscribeToTopic("JoinToRumanhh");
         FirebaseMessaging.getInstance().subscribeToTopic("USMART_MTGR");
         SharedPreferences login = getSharedPreferences(Values.SharedPreferences_FileName, 0);
         login.getString("isLogin", "login");
 
+        try {
+            FirebaseMessaging.getInstance().getToken().addOnSuccessListener(token -> {
+
+                    Log.d(TAG, "retrieve token successful : " + token);
+
+            }).addOnFailureListener(e -> {
+                //handle e
+            }).addOnCanceledListener(() -> {
+                //handle cancel
+            }).addOnCompleteListener(task -> Log.v(TAG, "This is the token : " + task.getResult()));
+        }catch (Exception e){
+
+        }
 
 
         UserMobileHolder.getInstance().setData("");
