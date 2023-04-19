@@ -193,6 +193,11 @@ public class Home extends Activity {
                 startActivity(intent);
             }
         });
+        if (!canCall()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                requestPermissions(CALL_PERMS, CALL_REQUEST);
+            }
+        }
     }
 
 
@@ -591,11 +596,7 @@ public class Home extends Activity {
         CartCount();
         loadMobile();
 
-        if (!canCall()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                requestPermissions(CALL_PERMS, CALL_REQUEST);
-            }
-        }
+
         BottomNavigationViewEx navigation = findViewById(R.id.navigation);
         navigation.enableAnimation(false);
         navigation.enableShiftingMode(false);

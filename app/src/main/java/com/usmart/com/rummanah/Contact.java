@@ -299,11 +299,7 @@ public class Contact extends Activity {
 
     @Override
     protected void onResume() {
-        if (!canCall()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                requestPermissions(CALL_PERMS, CALL_REQUEST);
-            }
-        }
+
         try {
             if (OnlineHolder.getInstance().getData().equals("1")) {
                 OnlineHolder.getInstance().setData("0");

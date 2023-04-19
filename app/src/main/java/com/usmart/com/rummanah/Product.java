@@ -868,11 +868,7 @@ public class Product extends FragmentActivity {
 
     @Override
     protected void onResume() {
-        if (!canCall()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                requestPermissions(CALL_PERMS, CALL_REQUEST);
-            }
-        }
+
         CartCount();
         try {
             if (OnlineHolder.getInstance().getData().equals("1")) {
