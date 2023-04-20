@@ -23,8 +23,8 @@
             android:layout_margin="15dp"
             android:gravity="right"
             android:text=""
-            android:textColor="#313131"
-            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
 
