@@ -1,10 +1,11 @@
-name: Android CI
 
+name: Build & Publish Release APK
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    tags:
+      - '*'
+
+
 
 jobs:
   build:
